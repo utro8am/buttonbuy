@@ -123,9 +123,9 @@ echo 'Total: ' . $jsondecodeditemapi->total . '<br>';
 
 foreach($jsondecodeditemapi->results as $itemapidata) 
 							{
-echo $itemapidata[masterVariant][images][0][url];								
+echo $itemapidata['masterVariant']['images'][0]['url'];								
 //$itemapidataid[$category][] = $itemapidata->id;	
-//ms($itemapidata);
+ms($itemapidata);
 
 							}
 

@@ -1,3 +1,152 @@
+Semyon
+
+
+
+Drive
+.
+Folder Path
+My Drive
+Hackaton
+NEW 
+Folders and views
+My DriveCollapsed
+Shared with me
+Google Photos
+Recent
+Starred
+Trash
+15 GB of 15 GB used
+Upgrade storage
+Name
+Owner
+Last modified
+File size
+
+style.css
+Radek Kropka
+12:48 pm
+2 KB
+Selected
+
+main.js
+Radek Kropka
+12:48 pm
+1 KB
+Not selected
+
+index.html
+Radek Kropka
+12:15 pm
+991 bytes
+Not selected
+
+image_2.jpg
+Radek Kropka
+2:26 am
+25 KB
+Not selected
+
+image_1.jpg
+Radek Kropka
+2:26 am
+41 KB
+Not selected
+
+timer_small.gif
+Radek Kropka
+2:26 am
+602 KB
+Not selected
+
+timer_large.gif
+Radek Kropka
+2:26 am
+3 MB
+Not selected
+
+image_11.jpg
+Radek Kropka
+2:26 am
+32 KB
+Not selected
+
+image_10.jpg
+Radek Kropka
+2:26 am
+24 KB
+Not selected
+
+image_9.jpg
+Radek Kropka
+2:26 am
+12 KB
+Not selected
+
+image_8.jpg
+Radek Kropka
+2:26 am
+20 KB
+Not selected
+
+image_7.jpg
+Radek Kropka
+2:26 am
+24 KB
+Not selected
+
+image_6.jpg
+Radek Kropka
+2:26 am
+25 KB
+Not selected
+
+image_5.jpg
+Radek Kropka
+2:26 am
+27 KB
+Not selected
+
+image_4.jpg
+Radek Kropka
+2:26 am
+35 KB
+Not selected
+
+image_3.jpg
+Radek Kropka
+2:25 am
+28 KB
+Not selected
+Style Sheet
+style.css
+Details
+Activity
+style.css
+Sharing Info
+R
+S
+General Info
+Type
+Style Sheet
+Size
+2 KB (1,869 bytes)
+Storage used
+0 bytesOwned by someone else
+Location
+Hackaton
+Owner
+Radek Kropka
+Modified
+12:48 pm by Radek Kropka
+Created
+12:48 pm
+Description
+Add a description
+Download permissions
+Viewers can download
+
+
+
 /* Global Classes */
 
 body {
@@ -16,9 +165,30 @@ body {
 }
 
 .container {
-	width: 100%;
-	display: block;	
-	text-align: 	center;	
+  display: block;
+  text-align: center;
+
+}
+
+.confirmation,
+.continue {
+	display: block;
+	text-align: center;
+	background-color: #5EFF45;
+	border-radius: 10px;
+	width: 600px;
+	height: 100px;
+	width: 50%;
+    margin: 10px auto;
+}
+
+.continue {
+	cursor: pointer;
+	background-color: #5FC4DD;
+}
+
+.continue:hover {
+	background-color: #397483;
 }
 
 .product {
@@ -41,7 +211,7 @@ body {
 }
 
 .product::after {	
-	content: 	"PRICE: 15$";
+	content: attr(data-content) '';
 	top:600px;
 
 }
@@ -53,6 +223,8 @@ body {
 	height: 	100%;
     width: 100%;
     display:none;
+    margin-left: auto;
+  	margin-right: auto;
 }
 
 .product img.active{
@@ -75,4 +247,12 @@ body {
   top: 50%;
   margin-left: -180px; /* -1 * image width / 2 */
   margin-top: -180px; /* -1 * image height / 2 */
+}
+
+.purchase {
+	width: 600px;
+	height: 	600px;
+	display: block;
+	width: 100%;
+    margin: 0 auto;
 }
