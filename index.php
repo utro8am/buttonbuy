@@ -118,14 +118,12 @@ $new_array = json_decode($jsondecodeditemapi);
  
 
 
-echo 'Total: ' . $jsondecodeditemapi->total . '<br>';
+//echo 'Total: ' . $jsondecodeditemapi->total . '<br>';
 
 
-foreach($jsondecodeditemapi->results as $itemapidata) 
+//foreach($jsondecodeditemapi->results as $itemapidata) 
 							{
-echo $itemapidata['masterVariant']['images'][0]['url'];								
-//$itemapidataid[$category][] = $itemapidata->id;	
-ms($itemapidata);
+//ms($itemapidata);
 
 							}
 
