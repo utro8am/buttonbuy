@@ -1,0 +1,78 @@
+/* Global Classes */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 	50px;
+	margin: 100px;
+	line-height: 	100px;
+}
+
+
+*, *:after, *:before { 
+	-webkit-box-sizing: border-box; /* iOS <= 4 i Android <= 2.3 */ 
+	-moz-box-sizing: border-box; /* Firefox */ 
+	box-sizing: border-box; /* Chrome, Opera, Safari 5+ i IE 8+ */ 
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
+.container {
+	width: 100%;
+	display: block;	
+	text-align: 	center;	
+}
+
+.product {
+	width: 600px;
+	height: 	600px;
+	display: inline-block;
+}
+
+.product::before, 
+.product::after {
+	position: 	absolute	;
+	content: 	"BRAND LOGO";
+	background-color:#D3D3D3;
+	width: 	inherit	;
+	height: 	100px;
+	top: 	0;
+	display: 	block;	
+	opacity: 	.5;
+	top:100px;
+}
+
+.product::after {	
+	content: 	"PRICE: 15$";
+	top:600px;
+
+}
+
+.product img {
+	background-image: url('image_1.jpg');
+	background-repeat: no-repeat;
+	background-position: center; 
+	height: 	100%;
+    width: 100%;
+    display:none;
+}
+
+.product img.active{
+      display:block;
+  }
+
+.timer {
+	position: 	relative;	
+	width: 360px;
+	height: 600px;
+	display: inline-block;
+}
+
+.timer img {	
+	background-image: url('timer_large.jpg');
+    width: 100%;
+
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -180px; /* -1 * image width / 2 */
+  margin-top: -180px; /* -1 * image height / 2 */
+}
